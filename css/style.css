@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --fonte-primaria: 'Libre Baskerville', serif;
+    --fonte-secundaria: 'Dosis', sans-serif;
+    --fonte-terciaria: 'Dancing Script', cursive;
+    --cor-fundo: #C5DBF2;
+    --cor-botoes: #007C89;
+    --cor-fundo-imagem: #F7D5C5;
+    --cor-branco: #fff;
+    --cor-cinza: #EEEEEC;
+    --cor-letra-mood: #f66845;
+    --cor-fontes-padrao: #241C15;
+    --cor-fontes-botões: #E6F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+nav {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .left,
+nav .right {
+    display: flex;
+    align-items: center;
+}
+
+nav .left ol {
+    padding: 0;
+    margin: 0;
+}
+
+nav .left ol li {
+    display: inline;
+    margin: 20px;
+}
+
+nav .left ol li a {
+    text-decoration: none; 
+    position: relative; 
+    color: var(--cor-fontes-padrao);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight:500;
+}
+
+nav .left ol li a::after {
+    content: '';
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px;
+    background-color: var(--cor-fontes-padrao); 
+    transition: width 0.3s ease; 
+}
+
+nav .left ol li a:hover::after {
+    width: 100%; 
+}
+
+nav .center img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav .right img,
+nav .right button {
+    margin: 0px 15px 0px 5px;
+    cursor: pointer;
+}
+
+#botao1 {
+    padding: 10px 20px;
+    background: transparent;
+    transition: border-color 0.3s ease;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: solid 1px var(--cor-fontes-padrao);
+    color: var(--cor-fontes-padrao);
+}
+
+#botao1:hover {
+    border-color: #000; 
+    background-color: var(--cor-fontes-botões);
+}
+
+#botao2 {
+    background-color: var(--cor-botoes);
+    color: var(--cor-fontes-botões);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: 0px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+}
+
+#botao2:hover {
+    transform: scale(1.1);
+}
+
+/* ----- section */
+section {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 150px
+}
+
+article {
+    font-family: var(--fonte-primaria);
+    text-align: left;
+}
+
+article h1 {
+    font-size: 3rem; 
+    font-weight: lighter;
+    color: var(--cor-fontes-padrao);
+    text-align: left;
+}
+
+article p {
+    margin: 20px 0px 20px 0px;
+    font-family: var(--fonte-secundaria);
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.botao3 {
+    background-color: var(--cor-botoes);
+    color: var(--cor-fontes-botões);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.botao3:hover {
+    transform: scale(1.1);
+    background-color: #17828ed7;
+}
+
+aside {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center; 
+    margin-top: 20px;
+}
+aside > div {
+    margin-top: 20px; 
+    display: flex;
+}
+
+#produto {
+    position: relative;
+    background-color: var(--cor-fundo-imagem);
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 180%;
+    height: 280px;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.produto_topo-texto{
+    position: relative;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-letra-mood);
+    font-weight: 600;
+    font-size: 1.5rem;
+    z-index: 1;
+    margin-left: 140px;
+    margin-top: 25px;
+}
+
+.imagem_produto{
+    position: absolute;
+    float: left;
+    margin: 40px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: absolute; 
+    width: calc(100% - 20px);
+    margin: 10px;
+    cursor: pointer;
+}
+
+#venda {
+    position: absolute; 
+    top: 105px;
+    left: 114%;
+    transform: translateX(-50%); 
+    z-index: 2; 
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+    border: 2px solid #000;
+    border-radius: 15px; 
+    box-sizing: border-box;
+    overflow: hidden; 
+    box-shadow: 4px 3px 0px 3px #000;
+}
+
+.p_vendas {
+    margin-top: -20px; 
+    background-color: var(--cor-cinza);
+    padding: 13px 10px 8px 15px;
+    width: 120%; 
+    text-align: center; 
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    
+}
+
+#venda img {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#venda button {
+    background-color: var(--cor-botoes);
+    border-radius: 10px;
+    width: auto; 
+    padding: 7px 12px 7px 12px; 
+    margin-top: 20px; 
+    color: var(--cor-fontes-botões);
+    font-size: 14px;
+    border: var(--cor-botoes);
+    cursor: pointer;
+}
+
