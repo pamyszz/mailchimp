@@ -1,12 +1,12 @@
 ![Imagem do Projeto](https://imgur.com/qlt86qI.png)
 
-# Projeto HTML - Atividade 7 🚀
+# Projeto HTML/CSS - Atividade 7 🚀
 
 Este é um projeto HTML fornecido pelo Instituto Proa como parte da atividade 7. O projeto consiste em uma página HTML básica com elementos de cabeçalho, navegação, seções de conteúdo e elementos de estilo.
 
 ## 📌 Sobre o Projeto
 
-O projeto contém uma página HTML que apresenta informações sobre as lojas do Mailchimp. Ele inclui um cabeçalho com navegação, um banner promocional, uma seção de conteúdo principal e uma barra lateral com informações sobre um produto e um carrinho de compras.
+O projeto contém uma página HTML que apresenta informações sobre as lojas do Mailchimp. Ele inclui um cabeçalho com navegação, um banner promocional, uma seção de conteúdo principal e uma barra lateral com informações sobre um produto e um carrinho de compras. Lembrete: Não está responsivo!
 
 ## 🚀 Como Usar
 
